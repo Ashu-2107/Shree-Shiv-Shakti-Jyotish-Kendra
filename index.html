@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Shiv Shakti Jyotish Kendra – Astrologer in Shalimar Bagh, Delhi</title>
+  <meta name="description" content="Shree Shiv Shakti Jyotish Kendra – Trusted Vedic astrology, kundli, marriage guidance, pujas & rituals in Shalimar Bagh, Delhi. Consult Acharya Anuj Krishan Dubey." />
+  <meta name="keywords" content="Astrologer in Delhi, Janam Kundli Shalimar Bagh, Vastu Shalimar Bagh, Vedic Astrology Delhi, Kundli Milan, Manglik Dosh, Kalsarpa Dosh, Puja Delhi, Pandit Ji Shalimar Bagh" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --saffron: #E8700A;
+      --deep-saffron: #C45A00;
+      --gold: #D4A017;
+      --gold-light: #F0C842;
+      --crimson: #8B1A1A;
+      --maroon: #5C0A0A;
+      --cream: #FDF6E3;
+      --off-white: #FAF0D7;
+      --dark: #1A0A00;
+      --text: #2D1400;
+      --text-light: #6B3A1F;
+      --border: rgba(212, 160, 23, 0.3);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'Crimson Text', Georgia, serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ─── SACRED PATTERN BACKGROUND ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(232,112,10,0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139,26,26,0.04) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4A017' fill-opacity='0.04'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* ─── GLOBAL ANIMATIONS ─── */
+    .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    .delay-100 { transition-delay: 100ms; }
+    .delay-200 { transition-delay: 200ms; }
+    .delay-300 { transition-delay: 300ms; }
+
+    /* ─── NAVBAR ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(26,10,0,0.95); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--gold); padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 80px; transition: all 0.4s ease;
+    }
+    nav.scrolled { height: 65px; background: rgba(13, 5, 0, 0.98); box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+
+    .nav-brand { display: flex; flex-direction: column; line-height: 1.2; text-decoration: none; transition: transform 0.3s ease; }
+    .nav-brand:hover { transform: scale(1.02); }
+    .nav-brand .hindi { font-family: 'Cinzel Decorative', serif; font-size: 0.65rem; color: var(--gold-light); letter-spacing: 0.15em; text-transform: uppercase; }
+    .nav-brand .english { font-family: 'Cinzel', serif; font-size: 0.85rem; color: var(--cream); letter-spacing: 0.05em; }
+
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
+    .nav-links a {
+      font-family: 'Cinzel', serif; font-size: 0.75rem; letter-spacing: 0.1em;
+      color: var(--cream); text-decoration: none; text-transform: uppercase;
+      transition: color 0.3s ease, transform 0.3s ease; position: relative; padding: 0.5rem 0;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+      background: var(--gold); transform: scaleX(0); transform-origin: center; transition: transform 0.3s ease;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold-light); transform: translateY(-2px); }
+    .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
+
+    .nav-cta {
+      background: linear-gradient(45deg, var(--saffron), var(--deep-saffron)); color: white;
+      border: none; padding: 0.6rem 1.4rem; font-family: 'Cinzel', serif; font-size: 0.75rem;
+      letter-spacing: 0.08em; cursor: pointer; text-decoration: none; transition: all 0.3s ease;
+      border-radius: 4px; position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(232, 112, 10, 0.4);
+    }
+    .nav-cta::before {
+      content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+      transform: skewX(-25deg); animation: shimmer 3s infinite;
+    }
+    @keyframes shimmer { 0% { left: -100%; } 20% { left: 200%; } 100% { left: 200%; } }
+    .nav-cta:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 20px rgba(232, 112, 10, 0.6); }
+
+    .mobile-menu-btn { display: none; background: none; border: none; color: var(--gold); font-size: 1.8rem; cursor: pointer; transition: transform 0.3s ease; }
+    .mobile-menu-btn:hover { transform: scale(1.1); }
+
+    /* ─── SPA VIEW CONTAINER ─── */
+    main { flex: 1; margin-top: 80px; }
+    .page-view { display: none; opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .page-view.active { display: block; animation: pageFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    @keyframes pageFadeIn { to { opacity: 1; transform: translateY(0); } }
+
+    /* ─── COMMON PAGE HEADER ─── */
+    .page-header {
+      background: linear-gradient(180deg, rgba(26,10,0,0.9) 0%, rgba(92,10,10,0.8) 100%), url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4A017' fill-opacity='0.1'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      padding: 7rem 2rem; text-align: center; border-bottom: 2px solid var(--gold); position: relative;
+    }
+    .page-header-om { font-size: 3.5rem; color: var(--gold); margin-bottom: 1rem; line-height: 1; animation: float 3s ease-in-out infinite;}
+    .page-header h1 { font-family: 'Cinzel Decorative', serif; font-size: clamp(2.2rem, 5vw, 4rem); color: var(--cream); margin-bottom: 1rem; animation: fadeUp 1s ease forwards; }
+    .page-header p { font-family: 'Cinzel', serif; color: var(--gold-light); letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.95rem; animation: fadeUp 1s ease 0.2s forwards; opacity: 0; }
+
+    /* ─── REUSABLE COMPONENTS ─── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+    .section-title-wrapper { text-align: center; margin-bottom: 3.5rem; }
+    .section-eyebrow { font-family: 'Cinzel', serif; font-size: 0.85rem; letter-spacing: 0.3em; color: var(--saffron); text-transform: uppercase; margin-bottom: 0.8rem; display: block; font-weight: 600;}
+    .section-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(2rem, 3.5vw, 3rem); color: var(--crimson); line-height: 1.3; margin-bottom: 1rem; }
+    .section-line { width: 80px; height: 3px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 0 auto 1.5rem; border-radius: 2px;}
+    .section-desc { max-width: 700px; margin: 0 auto; font-size: 1.15rem; color: var(--text-light); font-style: italic; }
+
+    .btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: var(--saffron); color: white; padding: 1rem 2.2rem; font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 0.1em; text-decoration: none; border: 2px solid var(--saffron); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); text-transform: uppercase; cursor: pointer; border-radius: 4px; position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(232, 112, 10, 0.3);}
+    .btn-primary::before { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent); transform: skewX(-25deg); animation: shimmer 4s infinite 1s; }
+    .btn-primary:hover { background: transparent; color: var(--saffron); transform: translateY(-4px); box-shadow: 0 10px 25px rgba(232, 112, 10, 0.2); }
+    
+    .btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: transparent; color: var(--gold-light); padding: 1rem 2.2rem; font-family: 'Cinzel', serif; font-size: 0.9rem; letter-spacing: 0.1em; text-decoration: none; border: 2px solid var(--gold); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); text-transform: uppercase; border-radius: 4px;}
+    .btn-outline:hover { background: var(--gold); color: var(--dark); transform: translateY(-4px); box-shadow: 0 10px 25px rgba(212, 160, 23, 0.2); }
+    
+    .btn-whatsapp { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: #25D366; color: white; padding: 0.8rem 1.5rem; font-family: 'Cinzel', serif; font-size: 0.8rem; letter-spacing: 0.08em; text-decoration: none; text-transform: uppercase; transition: all 0.3s ease; border: none; cursor: pointer; border-radius: 4px; box-shadow: 0 4px 10px rgba(37,211,102,0.3);}
+    .btn-whatsapp:hover { background: #128C7E; transform: translateY(-3px); box-shadow: 0 8px 20px rgba(37,211,102,0.4); }
+
+    /* Image Styling with Fallback */
+    .img-fluid { width: 100%; height: 100%; object-fit: cover; }
+    .img-contain { width: 100%; height: 100%; object-fit: contain; }
+
+    /* ─── HOME PAGE STYLES ─── */
+    .hero-section {
+      min-height: calc(100vh - 80px);
+      background: linear-gradient(180deg, rgba(26,10,0,0.75) 0%, rgba(92,10,10,0.55) 50%, rgba(26,10,0,0.85) 100%), linear-gradient(135deg, #3D0C00 0%, #8B1A1A 30%, #4A2800 60%, #1A0A00 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; 
+      padding: 6rem 2rem 10rem; /* Increased padding to add more gap before cards */
+      position: relative; overflow: hidden;
+    }
+    .hero-particles { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+    .particle { position: absolute; background: var(--gold); border-radius: 50%; opacity: 0; animation: floatUp 6s infinite linear; box-shadow: 0 0 10px var(--gold); }
+    @keyframes floatUp { 0% { transform: translateY(100vh) scale(0); opacity: 0; } 20% { opacity: 0.6; } 80% { opacity: 0.6; } 100% { transform: translateY(-20vh) scale(1); opacity: 0; } }
+
+    .hero-section::before, .hero-section::after { content: ''; position: absolute; border-radius: 50%; border: 1px solid rgba(212,160,23,0.2); animation: spin 40s linear infinite; pointer-events: none;}
+    .hero-section::before { width: 700px; height: 700px; border-style: dashed; animation-duration: 60s; }
+    .hero-section::after { width: 500px; height: 500px; border-color: rgba(232,112,10,0.15); animation-direction: reverse; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .hero-content-wrapper { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
+
+    .hero-om { font-size: 6rem; color: var(--gold); line-height: 1; margin-bottom: 1rem; animation: glow 3s ease-in-out infinite alternate, float 4s ease-in-out infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+    @keyframes glow { from { text-shadow: 0 0 20px rgba(212,160,23,0.5), 0 0 40px rgba(212,160,23,0.3); } to { text-shadow: 0 0 40px rgba(232,112,10,0.9), 0 0 80px rgba(212,160,23,0.7); } }
+    
+    .hero-tagline { font-family: 'Cinzel', serif; font-size: 0.85rem; letter-spacing: 0.4em; color: var(--gold-light); text-transform: uppercase; margin-bottom: 1.2rem; }
+    .hero-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(2.5rem, 6vw, 4.5rem); color: var(--cream); line-height: 1.2; margin-bottom: 0.6rem; text-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+    .hero-subtitle { font-family: 'Cinzel', serif; font-size: clamp(1.1rem, 2vw, 1.5rem); color: var(--gold); letter-spacing: 0.15em; margin-bottom: 2rem; }
+    .hero-desc { font-size: 1.2rem; color: rgba(253,246,227,0.9); max-width: 700px; margin: 0 auto 3rem; line-height: 1.8; }
+    .hero-btns { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; } /* Added margin-bottom to ensure gap */
+    
+    .home-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-top: -6rem; position: relative; z-index: 10; padding: 0 2rem; max-width: 1200px; margin-left: auto; margin-right: auto;}
+    .feature-card { background: white; padding: 2.5rem 2rem; text-align: center; border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; }
+    .feature-card:hover { transform: translateY(-12px) scale(1.02); box-shadow: 0 20px 40px rgba(212, 160, 23, 0.15); border-color: var(--gold); }
+    .feature-card .icon { font-size: 3rem; margin-bottom: 1.5rem; display: inline-block; transition: transform 0.4s ease; }
+    .feature-card:hover .icon { transform: scale(1.2) rotate(5deg); }
+    .feature-card h3 { font-family: 'Cinzel', serif; color: var(--crimson); margin-bottom: 0.8rem; font-size: 1.4rem; }
+    .feature-card p { font-size: 1rem; color: var(--text-light); margin-bottom: 1.5rem; }
+    .feature-card a { color: var(--saffron); font-weight: bold; font-size: 0.9rem; text-decoration: none; position: relative; display: inline-block; transition: color 0.3s ease; }
+    .feature-card a::after { content: '→'; position: absolute; right: -15px; opacity: 0; transform: translateX(-10px); transition: all 0.3s ease; }
+    .feature-card:hover a { color: var(--deep-saffron); padding-right: 15px; }
+    .feature-card:hover a::after { opacity: 1; transform: translateX(0); }
+
+    /* ─── TESTIMONIALS (HOME PAGE) ─── */
+    .testimonials-section { padding: 6rem 0; background: var(--off-white); position: relative; overflow: hidden;}
+    .google-badge { display: inline-flex; align-items: center; gap: 0.8rem; background: white; padding: 0.8rem 1.5rem; border-radius: 50px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-top: 1rem; border: 1px solid var(--border); }
+    .google-badge img { width: 24px; height: 24px; }
+    .google-badge span { font-family: 'Cinzel', serif; color: var(--dark); font-weight: 600; font-size: 1rem;}
+    .google-badge .stars { color: #fbbc04; letter-spacing: 2px; }
+    
+    .marquee-wrapper { margin-top: 4rem; width: 100%; overflow: hidden; position: relative; }
+    .marquee-wrapper::before, .marquee-wrapper::after { content: ''; position: absolute; top: 0; width: 150px; height: 100%; z-index: 2; pointer-events: none; }
+    .marquee-wrapper::before { left: 0; background: linear-gradient(to right, var(--off-white), transparent); }
+    .marquee-wrapper::after { right: 0; background: linear-gradient(to left, var(--off-white), transparent); }
+    
+    .marquee-track { display: flex; width: max-content; animation: scrollLeft 60s linear infinite; gap: 2rem; padding: 1rem 2rem; }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    
+    .review-card { width: 380px; background: white; padding: 2rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(0,0,0,0.04); display: flex; flex-direction: column; gap: 1rem; transition: transform 0.3s ease; white-space: normal;}
+    .review-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(212, 160, 23, 0.15); border-color: var(--gold); }
+    .review-header { display: flex; align-items: center; gap: 1rem; }
+    .review-avatar { width: 50px; height: 50px; border-radius: 50%; background: var(--gold-light); display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-size: 1.5rem; color: var(--dark); font-weight: bold; }
+    .review-info { display: flex; flex-direction: column; }
+    .review-name { font-family: 'Cinzel', serif; font-weight: 700; color: var(--crimson); font-size: 1.1rem; }
+    .review-stars { color: #fbbc04; font-size: 1rem; letter-spacing: 2px;}
+    .review-text { font-size: 1.05rem; color: var(--text-light); font-style: italic; line-height: 1.6; }
+    .review-google-icon { width: 18px; margin-left: auto; opacity: 0.7;}
+
+    /* ─── ABOUT PAGE STYLES ─── */
+    .about-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: center; }
+    .about-image-frame { position: relative; transition: transform 0.5s ease; border-radius: 8px; z-index: 2;}
+    .about-image-frame:hover { transform: scale(1.02); }
+    
+    /* Uploaded Photo of Acharya Ji */
+    .about-image-placeholder { width: 100%; aspect-ratio: 3/4; background: var(--dark); border: 3px solid var(--gold); position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center;}
+    .about-frame-accent { position: absolute; bottom: -2rem; right: -2rem; width: 80%; height: 80%; border: 3px solid var(--saffron); z-index: -1; border-radius: 8px; transition: all 0.5s ease; }
+    .about-image-frame:hover .about-frame-accent { transform: translate(10px, 10px); border-color: var(--gold); }
+    
+    .about-text p { font-size: 1.15rem; margin-bottom: 1.5rem; color: var(--text); line-height: 1.8; }
+    .about-text .highlight { color: var(--crimson); font-weight: 600; font-family: 'Cinzel', serif; }
+    .badges-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2.5rem; }
+    .badge-item { display: flex; align-items: center; gap: 1rem; background: white; padding: 1.2rem; border-left: 4px solid var(--gold); box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border-radius: 0 8px 8px 0;}
+    .badge-item:hover { transform: translateX(10px); box-shadow: 0 8px 25px rgba(212,160,23,0.15); border-left-color: var(--saffron); }
+
+    .philosophy-section { background: var(--dark); color: var(--cream); padding: 6rem 2rem; text-align: center; margin-top: 5rem; position: relative;}
+    .philosophy-section .section-title { color: var(--gold); }
+    .philosophy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; max-width: 1100px; margin: 4rem auto 0; }
+    .phil-card { border: 1px solid rgba(212,160,23,0.3); padding: 3rem 2rem; background: rgba(255,255,255,0.02); border-radius: 8px; transition: all 0.4s ease; backdrop-filter: blur(5px);}
+    .phil-card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.05); border-color: var(--gold); box-shadow: 0 15px 30px rgba(0,0,0,0.4); }
+
+    /* ─── SERVICES PAGE STYLES ─── */
+    .services-grid-large { display: grid; grid-template-columns: 1fr; gap: 4rem; }
+    .service-row { display: flex; flex-direction: row; background: white; border: 1px solid var(--border); box-shadow: 0 8px 25px rgba(0,0,0,0.04); overflow: hidden; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); border-radius: 12px;}
+    .service-row:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(139,26,26,0.1); border-color: var(--gold-light);}
+    
+    /* Image inside service cards */
+    .service-image-container { flex: 0 0 35%; position: relative; overflow: hidden; border-right: 4px solid var(--saffron); background: var(--dark);}
+    .service-image-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; opacity: 0.9;}
+    .service-row:hover .service-image-container img { transform: scale(1.08); opacity: 1;}
+    
+    .service-content { flex: 1; padding: 4rem; display: flex; flex-direction: column; justify-content: center;}
+    .service-content h3 { font-family: 'Cinzel Decorative', serif; font-size: 2.2rem; color: var(--crimson); margin-bottom: 1.2rem; }
+    .service-content p { font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.8; color: var(--text); }
+    .service-feature-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 2.5rem; list-style: none; }
+    .service-feature-list li { position: relative; padding-left: 2rem; font-size: 1.05rem; color: var(--text-light);}
+    .service-feature-list li::before { content: '❖'; position: absolute; left: 0; color: var(--saffron); font-size: 1rem; top: 2px; transition: transform 0.3s ease; }
+    .service-row:hover .service-feature-list li::before { transform: scale(1.2) rotate(90deg); color: var(--gold); }
+
+    /* ─── PUJAS & KATHAS PAGE STYLES ─── */
+    .pujas-intro-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center; margin-bottom: 5rem; }
+    .pujas-intro-text { font-size: 1.15rem; line-height: 1.8; color: var(--text); }
+    .pujas-intro-img { border-radius: 8px; border: 4px solid var(--gold); box-shadow: 0 15px 40px rgba(0,0,0,0.2); overflow: hidden; aspect-ratio: 4/3; }
+    .pujas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem; }
+    .puja-detailed-card { display: flex; flex-direction: column; background: white; border: 1px solid var(--border); border-top: 5px solid var(--gold); padding: 3rem 2rem; text-align: center; position: relative; transition: all 0.4s ease; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.03);}
+    .puja-detailed-card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(212,160,23,0.15); border-top-color: var(--saffron); }
+    .puja-detailed-card .icon-wrap { width: 80px; height: 80px; background: var(--off-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 1.5rem; border: 2px dashed var(--saffron); transition: all 0.5s ease; }
+    .puja-detailed-card:hover .icon-wrap { background: var(--gold-light); border-color: var(--crimson); transform: rotateY(360deg); }
+    .puja-detailed-card h3 { font-family: 'Cinzel', serif; font-size: 1.3rem; color: var(--dark); margin-bottom: 1rem; }
+    .puja-detailed-card p { font-size: 1rem; color: var(--text-light); margin-bottom: 1.5rem; height: 75px; line-height: 1.5;}
+    .puja-benefits { text-align: left; background: var(--off-white); padding: 1.2rem; border-radius: 6px; margin-bottom: 1.5rem; font-size: 0.9rem; border-left: 3px solid var(--gold); transition: background 0.3s;}
+    .puja-detailed-card:hover .puja-benefits { background: white; box-shadow: inset 0 0 10px rgba(0,0,0,0.05); }
+    .puja-benefits strong { color: var(--crimson); display: block; margin-bottom: 0.4rem; font-family: 'Cinzel', serif; font-size: 1rem; }
+
+    /* ─── GALLERY / KENDRA PAGE STYLES ─── */
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem; grid-auto-flow: dense; }
+    .gallery-item { position: relative; overflow: hidden; border-radius: 8px; border: 3px solid var(--gold); box-shadow: 0 10px 20px rgba(0,0,0,0.15); cursor: pointer; aspect-ratio: 4/3; background: var(--dark);}
+    .gallery-item.portrait { aspect-ratio: 3/4; }
+    .gallery-item.large { grid-column: span 2; aspect-ratio: 16/9; } 
+    @media (max-width: 992px) {
+      .gallery-item.large { grid-column: span 1; aspect-ratio: 4/3; }
+    }
+    .gallery-item:hover { border-color: var(--saffron); box-shadow: 0 15px 35px rgba(212,160,23,0.3); }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease, filter 0.3s ease; opacity: 0.95;}
+    .gallery-item:hover img { transform: scale(1.08); filter: brightness(1.1);}
+    .gallery-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,10,0,0.9) 0%, rgba(26,10,0,0.4) 40%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 2rem 1.5rem; opacity: 0; transition: opacity 0.3s ease; }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay h4 { color: var(--gold-light); font-family: 'Cinzel', serif; font-size: 1.3rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8); margin: 0 0 0.5rem 0;}
+
+    /* Modal / Lightbox for Gallery */
+    .modal { display: none; position: fixed; z-index: 3000; padding-top: 50px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(13,5,0,0.95); backdrop-filter: blur(8px); }
+    .modal-content { margin: auto; display: block; max-width: 90%; max-height: 80vh; border: 4px solid var(--gold); border-radius: 8px; box-shadow: 0 0 60px rgba(212,160,23,0.4); animation: zoom 0.4s cubic-bezier(0.16, 1, 0.3, 1); object-fit: contain; background: black;}
+    @keyframes zoom { from {transform:scale(0.8); opacity:0} to {transform:scale(1); opacity:1} }
+    .close { position: absolute; top: 20px; right: 40px; color: var(--gold-light); font-size: 45px; font-weight: bold; transition: 0.3s; cursor: pointer; text-shadow: 0 2px 10px rgba(0,0,0,0.8);}
+    .close:hover, .close:focus { color: var(--saffron); text-decoration: none; transform: scale(1.2); }
+    #caption { margin: auto; display: block; width: 80%; max-width: 800px; text-align: center; color: var(--cream); padding: 20px 0; height: auto; font-family: 'Cinzel', serif; font-size: 1.3rem; letter-spacing: 0.05em; text-shadow: 0 2px 5px rgba(0,0,0,0.8);}
+
+    /* ─── CONTACT PAGE STYLES ─── */
+    .contact-container { display: flex; flex-direction: column; gap: 4rem; }
+    .contact-top-row { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: stretch; }
+    
+    .contact-map-wrap { border-radius: 12px; overflow: hidden; border: 2px solid var(--gold); box-shadow: 0 15px 40px rgba(0,0,0,0.2); min-height: 400px; background: var(--dark); position: relative; }
+    .contact-map-wrap iframe { width: 100%; height: 100%; min-height: 400px; display: block; border: none; position: absolute; top: 0; left: 0; }
+    
+    .contact-card { background: var(--dark); color: var(--cream); padding: 4rem 3rem; border-radius: 12px; border: 1px solid var(--gold); box-shadow: 0 20px 40px rgba(0,0,0,0.2); position: relative; overflow: hidden;}
+    .contact-card::before { content: '🕉'; position: absolute; right: -20px; bottom: -20px; font-size: 15rem; opacity: 0.05; pointer-events: none; }
+    .contact-card h3 { font-family: 'Cinzel Decorative', serif; font-size: 2.2rem; color: var(--gold); margin-bottom: 2.5rem; }
+    
+    .contact-method { display: flex; gap: 1.5rem; margin-bottom: 2.5rem; transition: transform 0.3s ease; }
+    .contact-method:hover { transform: translateX(10px); }
+    .contact-method .icon { font-size: 2.2rem; color: var(--saffron); background: rgba(255,255,255,0.05); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+    .contact-method h4 { font-family: 'Cinzel', serif; font-size: 1rem; letter-spacing: 0.1em; color: var(--gold-light); margin-bottom: 0.4rem; text-transform: uppercase;}
+    .contact-method p, .contact-method a { color: rgba(253,246,227,0.9); text-decoration: none; font-size: 1.1rem; line-height: 1.6;}
+
+    .contact-image-wrap { margin-top: 3rem; border: 3px solid var(--gold); border-radius: 8px; overflow: hidden; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.5); aspect-ratio: 4/3;}
+    .visiting-card-wrap { margin-top: 2rem; border-radius: 8px; overflow: hidden; border: 2px solid var(--gold); box-shadow: 0 10px 20px rgba(0,0,0,0.4); text-align: center; background: white;}
+    
+    .booking-form { background: white; padding: 4rem 3rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 15px 50px rgba(0,0,0,0.08); transition: box-shadow 0.3s;}
+    .booking-form:hover { box-shadow: 0 20px 60px rgba(212,160,23,0.15); }
+    .booking-form h3 { font-family: 'Cinzel Decorative', serif; font-size: 2.2rem; color: var(--crimson); margin-bottom: 0.8rem; }
+    .form-group { margin-bottom: 2rem; position: relative; }
+    .form-control { width: 100%; padding: 1rem 1.2rem; border: 2px solid #eee; border-radius: 6px; background: var(--off-white); font-family: inherit; font-size: 1.05rem; outline: none; transition: all 0.3s ease; }
+    .form-control:focus { border-color: var(--saffron); background: white; box-shadow: 0 0 0 4px rgba(232, 112, 10, 0.1); }
+
+    /* ─── WHATSAPP FLOAT ─── */
+    .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 2000; background: #25D366; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); animation: pulse-wa 2s ease-in-out infinite; transition: transform 0.3s ease; color: white;}
+    .whatsapp-float:hover { transform: scale(1.15) rotate(-10deg); }
+
+    /* ─── FOOTER ─── */
+    footer { background: #0D0500; padding: 5rem 2rem 2rem; text-align: center; border-top: 1px solid rgba(212,160,23,0.2); margin-top: auto; }
+    .footer-om { font-size: 3rem; color: var(--gold); margin-bottom: 1.5rem; transition: transform 0.5s ease; cursor: pointer;}
+    .footer-om:hover { transform: rotate(360deg); }
+    .footer-brand { font-family: 'Cinzel Decorative', serif; font-size: 1.5rem; color: var(--cream); margin-bottom: 0.8rem; }
+    .footer-links { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
+    .footer-links a { font-family: 'Cinzel', serif; font-size: 0.9rem; color: var(--gold); text-decoration: none; text-transform: uppercase; transition: all 0.3s ease; cursor: pointer; position: relative;}
+    
+    @media (max-width: 992px) {
+      .about-layout, .contact-top-row, .pujas-intro-layout { grid-template-columns: 1fr; }
+      .service-row { flex-direction: column; }
+      .service-image-container { height: 280px; border-right: none; border-bottom: 4px solid var(--saffron); }
+      .service-content { padding: 3rem 2rem; }
+      .pujas-intro-img { order: -1; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 0 1.5rem; }
+      .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(13,5,0,0.98); flex-direction: column; padding: 2rem; border-bottom: 2px solid var(--gold); }
+      .nav-links.show { display: flex; animation: slideDown 0.3s ease forwards; }
+      @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+      .mobile-menu-btn { display: block; }
+      .nav-cta.desktop-cta { display: none; } 
+      .nav-links .nav-cta { display: inline-block; margin-top: 1.5rem; width: 100%; text-align: center; }
+      .marquee-wrapper::before, .marquee-wrapper::after { width: 50px; }
+      .review-card { width: 300px; padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ░░ FLOATING WHATSAPP ░░ -->
+<a class="whatsapp-float" href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener" title="Chat on WhatsApp" aria-label="Chat with Acharya Ji on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+  </svg>
+</a>
+
+<!-- ░░ NAVBAR ░░ -->
+<nav id="main-nav">
+  <a href="#home" class="nav-brand nav-link" data-target="home">
+    <span class="hindi">श्री शिव शक्ति ज्योतिष केंद्र</span>
+    <span class="english">Shree Shiv Shakti Jyotish Kendra</span>
+  </a>
+  
+  <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+    <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+    <li><a href="#services" class="nav-link" data-target="services">Services</a></li>
+    <li><a href="#pujas" class="nav-link" data-target="pujas">Pujas & Kathas</a></li>
+    <li><a href="#gallery" class="nav-link" data-target="gallery">Our Kendra</a></li> 
+    <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+    <li><a class="nav-cta" href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" aria-label="Book a consultation on WhatsApp">📲 Book Now</a></li>
+  </ul>
+  
+  <a class="nav-cta desktop-cta" href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" aria-label="Book a consultation on WhatsApp">📲 Book Now</a>
+</nav>
+
+<!-- ░░ MAIN SPA CONTAINER ░░ -->
+<main id="app-root">
+
+  <!-- ========================================== -->
+  <!-- 1. HOME VIEW                               -->
+  <!-- ========================================== -->
+  <div id="home-view" class="page-view active">
+    <section class="hero-section">
+      <div id="particles-container" class="hero-particles"></div>
+      <div class="hero-content-wrapper">
+        <div class="hero-om">🕉</div>
+        <p class="hero-tagline">Vedic Wisdom · Ancient Guidance · Delhi</p>
+        <h1 class="hero-title">Shree Shiv Shakti<br>Jyotish Kendra</h1>
+        <p class="hero-subtitle">श्री शिव शक्ति ज्योतिष केंद्र</p>
+        <p class="hero-desc">
+          Trusted Vedic astrologers and Purohits bringing clarity, peace, and divine guidance to your life — through profound Kundli reading, Vastu Shastra, and sacred Puja rituals.
+        </p>
+        <div class="hero-btns">
+          <a class="btn-primary" href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20would%20like%20to%20consult%20with%20you." target="_blank" aria-label="Chat with Acharya Ji on WhatsApp">Chat with Acharya Ji</a>
+          <a class="btn-outline nav-link" href="#services" data-target="services">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="home-features reveal">
+      <div class="feature-card" onclick="document.querySelector('.nav-link[data-target=\'services\']').click()">
+        <span class="icon">📜</span>
+        <h3>Kundli Analysis</h3>
+        <p>Deep astrological insights into your life's blueprint.</p>
+        <a href="#services">Read More</a>
+      </div>
+      <div class="feature-card delay-100" onclick="document.querySelector('.nav-link[data-target=\'pujas\']').click()">
+        <span class="icon">🪔</span>
+        <h3>Sacred Pujas</h3>
+        <p>Authentic Vedic rituals and Kathas by Purohits.</p>
+        <a href="#pujas">Read More</a>
+      </div>
+      <div class="feature-card delay-200" onclick="document.querySelector('.nav-link[data-target=\'gallery\']').click()">
+        <span class="icon">🏛</span>
+        <h3>Sacred Environment</h3>
+        <p>Visit our beautiful Kendra for a peaceful consultation.</p>
+        <a href="#gallery">View Gallery</a>
+      </div>
+    </div>
+
+    <!-- ─── REVIEWS / TESTIMONIALS SECTION ─── -->
+    <section class="testimonials-section reveal">
+      <div class="container" style="padding-bottom: 0;">
+        <div class="section-title-wrapper" style="margin-bottom: 2rem;">
+          <span class="section-eyebrow">Divine Feedback</span>
+          <h2 class="section-title">Words of Our Devotees</h2>
+          <div class="section-line"></div>
+          <p class="section-desc">Authentic experiences from individuals who found clarity, peace, and direction through Acharya Ji's guidance.</p>
+          <div class="google-badge">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo">
+            <span>5.0 <span class="stars">★★★★★</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee-wrapper">
+        <div class="marquee-track">
+          <!-- Real Reviews Block 1 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">A</div>
+              <div class="review-info">
+                <span class="review-name">Atul Kumar</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"I visited Shiv Shakti Jyotish Kendra for my horoscope consultation, and it was a wonderful experience. Acharya Anuj Dubey Ji explained everything very clearly and patiently. His guidance gave me confidence and peace of mind. Highly recommended..."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div class="review-info">
+                <span class="review-name">Shashank Mishra</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Excellent experience at Jyotish Kendra! The astrologer was very knowledgeable and explained everything clearly. Remedies were practical and effective. Highly recommended for accurate and genuine astrology guidance."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">N</div>
+              <div class="review-info">
+                <span class="review-name">Nitesh Bhardwaj</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Ultimate accuracy..never ever had such experience in life...whatever He have told ....200% accuracy....."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">R</div>
+              <div class="review-info">
+                <span class="review-name">Rajesh Saini</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Very nice and very supportive.. you should definiately consult him. Hes very soft and polite and really helps in giving a good direction to the people."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">V</div>
+              <div class="review-info">
+                <span class="review-name">Vikash Kumar</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Visited sir's office for kundli.As per sir's information, almost everything which he says was correct and accurate."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div class="review-info">
+                <span class="review-name">Sunil Gambhir</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Great experience while talking to Guru ji, all negitive vibes vanished immediately great great experience."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div class="review-info">
+                <span class="review-name">Shantanu Dutta</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Right Relevant, Accurate Guidance To Life's Difficult Problems By Acharya Ji Maharaj ❤️🕉️☪️✝️🔯💘🙏"</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">R</div>
+              <div class="review-info">
+                <span class="review-name">Rambabu shastri</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Accurate Prediction It's very rare to see a scholar like you. It was great to meet you, Guruji."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">A</div>
+              <div class="review-info">
+                <span class="review-name">Anukalp Sharma</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"thanks guru ji for advice in my life its really work"</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div class="review-info">
+                <span class="review-name">Sanjay Sehgal</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"By coming to the blessings of Acharya Ji, I got the salvation of my innocent body. All of you must also contact me after reading my review and save your life."</p>
+          </div>
+
+          <!-- Duplicated Block 1 for Infinite Scroll Effect -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">A</div>
+              <div class="review-info">
+                <span class="review-name">Atul Kumar</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"I visited Shiv Shakti Jyotish Kendra for my horoscope consultation, and it was a wonderful experience. Acharya Anuj Dubey Ji explained everything very clearly and patiently. His guidance gave me confidence and peace of mind. Highly recommended..."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div class="review-info">
+                <span class="review-name">Shashank Mishra</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Excellent experience at Jyotish Kendra! The astrologer was very knowledgeable and explained everything clearly. Remedies were practical and effective. Highly recommended for accurate and genuine astrology guidance."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">N</div>
+              <div class="review-info">
+                <span class="review-name">Nitesh Bhardwaj</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Ultimate accuracy..never ever had such experience in life...whatever He have told ....200% accuracy....."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">R</div>
+              <div class="review-info">
+                <span class="review-name">Rajesh Saini</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Very nice and very supportive.. you should definiately consult him. Hes very soft and polite and really helps in giving a good direction to the people."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">V</div>
+              <div class="review-info">
+                <span class="review-name">Vikash Kumar</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Visited sir's office for kundli.As per sir's information, almost everything which he says was correct and accurate."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div class="review-info">
+                <span class="review-name">Sunil Gambhir</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Great experience while talking to Guru ji, all negitive vibes vanished immediately great great experience."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div class="review-info">
+                <span class="review-name">Shantanu Dutta</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Right Relevant, Accurate Guidance To Life's Difficult Problems By Acharya Ji Maharaj ❤️🕉️☪️✝️🔯💘🙏"</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">R</div>
+              <div class="review-info">
+                <span class="review-name">Rambabu shastri</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"Accurate Prediction It's very rare to see a scholar like you. It was great to meet you, Guruji."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">A</div>
+              <div class="review-info">
+                <span class="review-name">Anukalp Sharma</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"thanks guru ji for advice in my life its really work"</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">S</div>
+              <div class="review-info">
+                <span class="review-name">Sanjay Sehgal</span>
+                <span class="review-stars">★★★★★</span>
+              </div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="review-google-icon" alt="G">
+            </div>
+            <p class="review-text">"By coming to the blessings of Acharya Ji, I got the salvation of my innocent body. All of you must also contact me after reading my review and save your life."</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- 2. ABOUT VIEW                              -->
+  <!-- ========================================== -->
+  <div id="about-view" class="page-view">
+    <div class="page-header">
+      <div class="page-header-om">🙏</div>
+      <h1>About The Acharya</h1>
+      <p>Decades of Devotion to Vedic Science</p>
+    </div>
+
+    <div class="container about-layout">
+      <div class="about-image-frame reveal">
+        <div class="about-image-placeholder" style="background:none;">
+          <img src="WhatsApp%20Image%202026-04-19%20at%202.39.29%20PM.jpeg" onerror="this.src='https://placehold.co/600x800/1A0A00/D4A017?font=playfair-display&text=Acharya+Ji'" alt="Acharya Anuj Krishan Dubey Ji" class="img-fluid">
+        </div>
+        <div class="about-frame-accent"></div>
+      </div>
+      
+      <div class="about-text reveal delay-100">
+        <div class="section-title-wrapper" style="text-align: left;">
+          <span class="section-eyebrow">The Guiding Light</span>
+          <h2 class="section-title" style="margin-bottom: 0.5rem;">Acharya Anuj Krishan Dubey</h2>
+          <div class="section-line" style="margin: 0 0 1.5rem 0;"></div>
+        </div>
+        
+        <p>Acharya Anuj Krishan Dubey Ji is a highly revered <span class="highlight">Bhagwat Katha Vachak</span>, <span class="highlight">Vyakarana Acharya</span>, and <span class="highlight">Jyotish Acharya</span>. With an illustrious journey spanning over 30 years, he has dedicated his life to the deep study and practical application of ancient Vedic scriptures.</p>
+        
+        <p>Based at the Shree Shiv Shakti Jyotish Kendra in Shalimar Bagh, Delhi, Acharya Ji is not just an astrologer, but a spiritual counselor. He believes that astrology is not about fear-mongering, but rather a profound roadmap given by the divine to help us navigate life's karma with grace, awareness, and precise remedial measures.</p>
+
+        <div class="badges-grid">
+          <div class="badge-item reveal">
+            <span style="font-size:1.8rem; color:var(--saffron)">📖</span>
+            <strong>Bhagwat Katha Vachak</strong>
+          </div>
+          <div class="badge-item reveal delay-100">
+            <span style="font-size:1.8rem; color:var(--saffron)">🔮</span>
+            <strong>Jyotish Acharya</strong>
+          </div>
+          <div class="badge-item reveal">
+            <span style="font-size:1.8rem; color:var(--saffron)">🕉</span>
+            <strong>Vyakarana Acharya</strong>
+          </div>
+          <div class="badge-item reveal delay-100">
+            <span style="font-size:1.8rem; color:var(--saffron)">🏛</span>
+            <strong>Vastu Expert</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="philosophy-section">
+      <div class="section-title-wrapper reveal">
+        <span class="section-eyebrow" style="color:var(--gold-light)">Our Core Values</span>
+        <h2 class="section-title">The Kendra's Philosophy</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="philosophy-grid">
+        <div class="phil-card reveal">
+          <h4>Authentic Vedic Roots</h4>
+          <p>We strictly follow the Parashari system of astrology and scriptural injunctions for all pujas. No modern shortcuts; only pure, ancient wisdom.</p>
+        </div>
+        <div class="phil-card reveal delay-100">
+          <h4>Compassionate Counsel</h4>
+          <p>Every individual is treated with empathy. We ensure complete privacy and provide a safe space to discuss your deepest anxieties and life challenges.</p>
+        </div>
+        <div class="phil-card reveal delay-200">
+          <h4>Practical Remedies</h4>
+          <p>We do not suggest impossibly difficult or purely commercial remedies. Our focus is on Mantra therapy, charity (Daan), and precise Gemstone usage.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- 3. SERVICES VIEW (UPGRADED WITH IMAGES)    -->
+  <!-- ========================================== -->
+  <div id="services-view" class="page-view">
+    <div class="page-header">
+      <div class="page-header-om">🔮</div>
+      <h1>Astrological Services</h1>
+      <p>Comprehensive Guidance for Life's Journey</p>
+    </div>
+
+    <div class="container">
+      <div class="section-title-wrapper reveal">
+        <h2 class="section-title">Explore Our Expertise</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="services-grid-large">
+        
+        <!-- Service 1: Kundli -->
+        <div class="service-row reveal">
+          <div class="service-image-container">
+            <img src="https://image.pollinations.ai/prompt/beautiful-vedic-astrology-kundli-horoscope-chart-with-glowing-stars-and-golden-tones?width=800&height=800&nologo=true" onerror="this.src='https://placehold.co/600x600/1A0A00/D4A017?text=Kundli'" alt="Kundli & Horoscope">
+          </div>
+          <div class="service-content">
+            <h3>Kundli & Horoscope Analysis</h3>
+            <p>Your Janam Kundli is the cosmic map of your life. Acharya Ji manually verifies computerized charts to ensure accuracy down to the minute.</p>
+            <ul class="service-feature-list">
+              <li>Detailed Career & Wealth Forecasting</li>
+              <li>Health Diagnostics via Astrology</li>
+              <li>Manglik & Kalsarpa Dosh Identification</li>
+              <li>Sade Sati Impact & Timeline</li>
+            </ul>
+            <div><a class="btn-primary" href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20am%20interested%20in%20Kundli%20%26%20Horoscope%20Analysis.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" aria-label="Book Kundli Reading on WhatsApp">Book Kundli Reading</a></div>
+          </div>
+        </div>
+        
+        <!-- Service 2: Marriage (Using Yellow Peeli Chitthi) -->
+        <div class="service-row reveal">
+          <div class="service-image-container">
+            <img src="https://image.pollinations.ai/prompt/traditional-indian-hindu-wedding-sacred-fire-with-golden-lighting-and-marigold-flowers?width=800&height=800&nologo=true" onerror="this.src='https://placehold.co/600x600/1A0A00/D4A017?text=Marriage'" alt="Marriage & Relationship Guidance">
+          </div>
+          <div class="service-content">
+            <h3>Marriage & Relationship Guidance</h3>
+            <p>Marriage is a union of two souls and their karmas. We offer profound insights into relationship dynamics, ensuring lasting harmony.</p>
+            <ul class="service-feature-list">
+              <li>Ashtakoota Guna Milan (36 points check)</li>
+              <li>Nadi Dosh & Bhakoot Dosh Remedies</li>
+              <li>Love Marriage Astrological Support</li>
+              <li>Divorce Prevention Guidance</li>
+            </ul>
+            <div><a class="btn-primary" href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20am%20looking%20for%20Marriage%20%26%20Relationship%20Guidance.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" aria-label="Consult for Marriage on WhatsApp">Consult for Marriage</a></div>
+          </div>
+        </div>
+
+        <!-- Service 3: Gemstone / Vastu (Using Black Idol) -->
+        <div class="service-row reveal">
+          <div class="service-image-container">
+            <img src="https://image.pollinations.ai/prompt/glowing-vedic-navratna-gemstones-and-vastu-shastra-compass-on-ancient-table?width=800&height=800&nologo=true" onerror="this.src='https://placehold.co/600x600/1A0A00/D4A017?text=Gemstone+Vastu'" alt="Gemstone & Vastu">
+          </div>
+          <div class="service-content">
+            <h3>Gemstone Therapy & Vastu Shastra</h3>
+            <p>Balance the energies of your body and your home. Wearing the right gemstone can amplify your fortune, and a Vastu-compliant home attracts wealth.</p>
+            <ul class="service-feature-list">
+              <li>Personalized Navratna Prescription</li>
+              <li>Energization (Pran Pratishtha) of Gems</li>
+              <li>Residential & Commercial Vastu Audit</li>
+              <li>Vastu Remedies without Demolition</li>
+            </ul>
+            <div><a class="btn-primary" href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20need%20Gemstone%20Therapy%20%2F%20Vastu%20Advice.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" aria-label="Get Gemstone and Vastu Advice on WhatsApp">Get Gem/Vastu Advice</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- 4. PUJAS & KATHAS VIEW                     -->
+  <!-- ========================================== -->
+  <div id="pujas-view" class="page-view">
+    <div class="page-header">
+      <div class="page-header-om">🪔</div>
+      <h1>Pujas & Kathas</h1>
+      <p>Invoking Divine Grace Through Authentic Rituals</p>
+    </div>
+
+    <div class="container">
+      <div class="pujas-intro-layout reveal">
+        <div class="pujas-intro-text">
+          <span class="section-eyebrow">The Power of Mantra</span>
+          <h2 class="section-title">Sacred Vedic Rituals</h2>
+          <div class="section-line" style="margin-left:0;"></div>
+          <p>Rituals and mantras are the spiritual technology of our ancestors. At Shree Shiv Shakti Jyotish Kendra, <strong>Acharya Anuj Krishan Dubey</strong> and his team of highly learned Purohits conduct authentic, Parashari Vedic ceremonies.</p>
+          <p>Whether you need a simple peace-giving Havan or a grand 7-day Shrimad Bhagwat Katha, every ritual is performed with strict adherence to timing (Muhurat), purity, and deep devotion to neutralize negative karmas and invite immense prosperity.</p>
+          <div style="margin-top: 2rem;">
+            <a class="btn-primary" href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20want%20to%20inquire%20about%20booking%20a%20Puja%20%2F%20Katha.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" aria-label="Inquire for Puja Booking on WhatsApp">Inquire for Puja Booking</a>
+          </div>
+        </div>
+        <div class="pujas-intro-img">
+          <img src="2025-11-26.webp" onerror="this.src='https://placehold.co/800x600/1A0A00/D4A017?font=playfair-display&text=Grand+Puja+Setup'" alt="Grand Vedic Puja Setup" class="img-fluid img-contain" style="background:#000;">
+        </div>
+      </div>
+
+      <div class="pujas-grid">
+        <div class="puja-detailed-card reveal">
+          <div class="icon-wrap">🔱</div>
+          <h3>Maha Rudrabhishek</h3>
+          <p>A highly potent ritual honoring Lord Shiva with milk, honey, and sacred items alongside continuous Vedic chanting.</p>
+          <div class="puja-benefits"><strong>Key Benefits:</strong> Washes away severe karmic blockages, grants excellent health, and brings immense peace.</div>
+          <a href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20want%20to%20arrange%20a%20Maha%20Rudrabhishek%20Puja.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" class="btn-outline" style="margin-top: auto; padding: 0.6rem; font-size: 0.85rem;">Book This Puja</a>
+        </div>
+
+        <div class="puja-detailed-card reveal delay-100">
+          <div class="icon-wrap">📖</div>
+          <h3>Shrimad Bhagwat Katha</h3>
+          <p>A grand 7-day spiritual discourse narrating the divine leelas of Lord Krishna, delivered by Acharya Ji.</p>
+          <div class="puja-benefits"><strong>Key Benefits:</strong> Grants Moksha to departed ancestors (Pitrus) and purifies the entire household.</div>
+          <a href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20want%20to%20arrange%20a%20Shrimad%20Bhagwat%20Katha.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" class="btn-outline" style="margin-top: auto; padding: 0.6rem; font-size: 0.85rem;">Book This Katha</a>
+        </div>
+
+        <div class="puja-detailed-card reveal delay-200">
+          <div class="icon-wrap">🔥</div>
+          <h3>Navagraha Shanti Havan</h3>
+          <p>A sacred fire ceremony designed to appease the nine planetary deities who govern our life's events.</p>
+          <div class="puja-benefits"><strong>Key Benefits:</strong> Removes obstacles in career/business and mitigates ill effects of unfavorable dashas.</div>
+          <a href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20want%20to%20arrange%20a%20Navagraha%20Shanti%20Havan.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" class="btn-outline" style="margin-top: auto; padding: 0.6rem; font-size: 0.85rem;">Book This Havan</a>
+        </div>
+
+        <div class="puja-detailed-card reveal">
+          <div class="icon-wrap">🌙</div>
+          <h3>Sundarkand Path</h3>
+          <p>A powerful recitation of the Sundarkand chapter, invoking the infinite strength and protection of Lord Hanuman.</p>
+          <div class="puja-benefits"><strong>Key Benefits:</strong> Banishes fear, anxiety, and negative entities. Ensures success in daunting tasks.</div>
+          <a href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20want%20to%20arrange%20a%20Sundarkand%20Path.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" class="btn-outline" style="margin-top: auto; padding: 0.6rem; font-size: 0.85rem;">Book This Path</a>
+        </div>
+
+        <div class="puja-detailed-card reveal delay-100">
+          <div class="icon-wrap">🌿</div>
+          <h3>Kalsarpa & Mangal Dosh</h3>
+          <p>Specific remedial pujas tailored to correct major astrological flaws (dosh) present in one's birth chart.</p>
+          <div class="puja-benefits"><strong>Key Benefits:</strong> Clears delays in marriage, prevents sudden downfalls in wealth, ensures stability.</div>
+          <a href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20want%20to%20inquire%20about%20Kalsarpa%20%2F%20Mangal%20Dosh%20Puja.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" class="btn-outline" style="margin-top: auto; padding: 0.6rem; font-size: 0.85rem;">Book This Puja</a>
+        </div>
+
+        <div class="puja-detailed-card reveal delay-200">
+          <div class="icon-wrap">🏠</div>
+          <h3>Griha Pravesh Puja</h3>
+          <p>The foundational ceremonies before entering a new home or inaugurating a new office to ensure auspicious beginnings.</p>
+          <div class="puja-benefits"><strong>Key Benefits:</strong> Cleanses space of negative energies and invites Goddess Lakshmi and Lord Ganesha.</div>
+          <a href="https://wa.me/917905732148?text=Namaste%20Pandit%20Ji%2C%20I%20want%20to%20arrange%20a%20Griha%20Pravesh%20Puja.%20Please%20let%20me%20know%20how%20to%20proceed." target="_blank" class="btn-outline" style="margin-top: auto; padding: 0.6rem; font-size: 0.85rem;">Book This Puja</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- 5. GALLERY VIEW (DARSHAN)                  -->
+  <!-- ========================================== -->
+  <div id="gallery-view" class="page-view">
+    <div class="page-header">
+      <div class="page-header-om">🌸</div>
+      <h1>Darshan & Glimpses</h1>
+      <p>Step inside Shree Shiv Shakti Jyotish Kendra</p>
+    </div>
+
+    <div class="container">
+      <div class="section-title-wrapper reveal">
+        <span class="section-eyebrow">Our Sacred Space</span>
+        <h2 class="section-title">The Kendra Gallery</h2>
+        <div class="section-line"></div>
+        <p class="section-desc">Experience the serene, positive, and divinely charged atmosphere of our consultation office in Shalimar Bagh.</p>
+      </div>
+
+      <!-- PRECISION GALLERY GRID USING ACTUAL UPLOADED IMAGES -->
+      <div class="gallery-grid">
+        
+        <div class="gallery-item large reveal" onclick="openModal('2025-07-01%20(1).webp', 'Shree Shiv Shakti Jyotish Kendra - Shalimar Bagh, Delhi')">
+          <img src="2025-07-01%20(1).webp" onerror="this.src='https://placehold.co/1200x600/1A0A00/D4A017?text=Kendra+Exterior'" alt="Kendra Exterior">
+          <div class="gallery-overlay">
+            <h4>Kendra Exterior</h4>
+            <p>Welcome to our peaceful consultation center.</p>
+          </div>
+        </div>
+
+        <!-- DIVINE ENTRANCE SLOT UPDATED WITH YOUR NEW IMAGE -->
+        <div class="gallery-item reveal" onclick="openModal('WhatsApp%20Image%202026-04-17%20at%208.59.55%20PM%20(1).jpg', 'The Divine Ganesha Mural at Shree Shiv Shakti Jyotish Kendra Entrance')">
+          <img src="WhatsApp%20Image%202026-04-17%20at%208.59.55%20PM%20(1).jpg" onerror="this.src='https://placehold.co/800x600/1A0A00/D4A017?text=Ganesha+Mural'" alt="Divine Ganesha Mural at the Entrance">
+          <div class="gallery-overlay"><h4>Divine Entrance</h4></div>
+        </div>
+
+        <div class="gallery-item portrait reveal delay-100" onclick="openModal('WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(4).jpg', 'Acharya Ji\'s Consultation Desk')">
+          <img src="WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(4).jpg" onerror="this.src='https://placehold.co/800x600/1A0A00/D4A017?text=Office+Desk'" alt="Consultation Desk">
+          <div class="gallery-overlay"><h4>Consultation Desk</h4></div>
+        </div>
+
+        <div class="gallery-item reveal delay-200" onclick="openModal('WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(7).jpg', 'Comfortable seating for our clients')">
+          <img src="WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(7).jpg" onerror="this.src='https://placehold.co/800x600/1A0A00/D4A017?text=Waiting+Area'" alt="Waiting Area">
+          <div class="gallery-overlay"><h4>Visitor Seating</h4></div>
+        </div>
+
+        <div class="gallery-item reveal" onclick="openModal('WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(10).jpg', 'The Sacred Temple within the Kendra')">
+          <img src="WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(10).jpg" onerror="this.src='https://placehold.co/800x600/1A0A00/D4A017?text=Small+Mandir'" alt="Small Temple">
+          <div class="gallery-overlay"><h4>Sacred Mandir</h4></div>
+        </div>
+
+        <div class="gallery-item portrait reveal delay-100" onclick="openModal('WhatsApp%20Image%202026-04-17%20at%209.00.06%20PM%20(1).jpg', 'Shree Khatu Shyam Baba Darshan')">
+          <img src="WhatsApp%20Image%202026-04-17%20at%209.00.06%20PM%20(1).jpg" onerror="this.src='https://placehold.co/800x600/1A0A00/D4A017?text=Shyam+Baba+Idol'" alt="Shyam Baba">
+          <div class="gallery-overlay"><h4>Shree Shyam Baba</h4></div>
+        </div>
+
+        <div class="gallery-item portrait reveal delay-200" onclick="openModal('WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(5).jpg', 'Our Spiritual Library')">
+          <img src="WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(5).jpg" onerror="this.src='https://placehold.co/800x600/1A0A00/D4A017?text=Spiritual+Library'" alt="Spiritual Library">
+          <div class="gallery-overlay"><h4>Spiritual Library</h4></div>
+        </div>
+
+        <div class="gallery-item portrait reveal" onclick="openModal('WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(21).jpg', 'Kendra Exterior (Night View)')">
+          <img src="WhatsApp%20Image%202026-04-17%20at%209.00.10%20PM%20(21).jpg" onerror="this.src='https://placehold.co/800x600/1A0A00/D4A017?text=Exterior+Night'" alt="Kendra Exterior Night View">
+          <div class="gallery-overlay"><h4>Exterior (Night View)</h4></div>
+        </div>
+
+        <div class="gallery-item large reveal delay-100" onclick="openModal('2025-11-26.webp', 'Grand Vedic Puja Setup')">
+          <img src="2025-11-26.webp" onerror="this.src='https://placehold.co/1200x600/1A0A00/D4A017?text=Puja+Setup'" alt="Puja Setup">
+          <div class="gallery-overlay"><h4>Grand Vedic Rituals</h4><p>Elaborate setups for authentic Shanti paths and Kathas.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL (Hidden by default) -->
+  <div id="imgModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+
+  <!-- ========================================== -->
+  <!-- 6. CONTACT VIEW                            -->
+  <!-- ========================================== -->
+  <div id="contact-view" class="page-view">
+    <div class="page-header">
+      <div class="page-header-om">📞</div>
+      <h1>Contact Us</h1>
+      <p>We are here to guide you</p>
+    </div>
+
+    <div class="container contact-container">
+      
+      <!-- Top Row: Map Left, Info Right -->
+      <div class="contact-top-row">
+        
+        <!-- Google Maps Embed (Left) -->
+        <div class="contact-map-wrap reveal">
+           <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Shree%20Shiv%20Shakti%20Jyotish%20Kendra,%20Shalimar%20Bagh,%20Delhi&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+
+        <!-- Contact Info (Right) -->
+        <div class="contact-card reveal delay-100">
+          <h3>Get in Touch</h3>
+          <div class="contact-method">
+            <div class="icon" aria-hidden="true">📍</div>
+            <div>
+              <h4>Visit the Kendra</h4>
+              <p>BK-1/3, Block BK,<br>West Shalimar Bagh,<br>Delhi – 110088</p>
+              <a href="https://www.google.com/maps/place/Shree+Shiv+Shakti+Jyotish+Kendra/@28.7094528,77.1662072,18.23z/data=!4m6!3m5!1s0x390d0126e0f28caf:0x85812f3bf88de730!8m2!3d28.7088132!4d77.1670248!16s%2Fg%2F11xmv2v_xg!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: var(--saffron); font-weight: bold; text-decoration: none; font-size: 0.95rem; display: inline-block; margin-top: 0.5rem; transition: color 0.3s;">🗺️ Get Directions</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="icon" aria-hidden="true">📲</div>
+            <div>
+              <h4>Direct Call / WhatsApp</h4>
+              <a href="https://wa.me/917905732148" target="_blank">+91 79057 32148</a>
+            </div>
+          </div>
+          
+          <!-- Office Exterior Signboard Mapped Here -->
+          <div class="contact-image-wrap">
+             <img src="2025-07-01%20(1).webp" onerror="this.src='https://placehold.co/600x400/1A0A00/D4A017?text=Office+Exterior'" alt="Kendra Exterior Signboard" class="img-fluid">
+          </div>
+          
+          <!-- Digital Visiting Card Add-on -->
+          <div class="visiting-card-wrap reveal delay-200">
+             <img src="2025-07-01.webp" onerror="this.src='https://placehold.co/600x300/1A0A00/D4A017?text=Visiting+Card'" alt="Shree Shiv Shakti Jyotish Kendra Visiting Card" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- Booking / Inquiry Form Visual (Bottom Full Width) -->
+      <div class="booking-form reveal delay-200" style="margin: 0 auto; max-width: 900px; width: 100%;">
+        <h3>Request an Appointment</h3>
+        <p>Fill out this form, and our team will contact you via WhatsApp to confirm your slot.</p>
+        
+        <form onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label>Your Full Name</label>
+            <input type="text" id="fname" class="form-control" required placeholder="e.g., Rahul Sharma">
+          </div>
+          <div class="form-group">
+            <label>WhatsApp Number</label>
+            <input type="tel" id="fphone" class="form-control" required placeholder="+91 XXXXX XXXXX">
+          </div>
+          <div class="form-group">
+            <label>Service Interested In</label>
+            <select id="fservice" class="form-control">
+              <option value="Kundli Reading">Kundli Reading</option>
+              <option value="Marriage Consultation">Marriage Consultation</option>
+              <option value="Gemstone / Vastu">Gemstone / Vastu</option>
+              <option value="Puja / Katha Booking">Puja / Katha Booking</option>
+              <option value="General Question">General Question</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send via WhatsApp</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- ░░ FOOTER ░░ -->
+<footer>
+  <div class="footer-om">🕉</div>
+  <div class="footer-brand">Shree Shiv Shakti Jyotish Kendra</div>
+  <div class="footer-sub">श्री शिव शक्ति ज्योतिष केंद्र · Shalimar Bagh, Delhi</div>
+  <div class="footer-links">
+    <a class="nav-link" href="#home" data-target="home">Home</a>
+    <a class="nav-link" href="#about" data-target="about">About</a>
+    <a class="nav-link" href="#services" data-target="services">Services</a>
+    <a class="nav-link" href="#pujas" data-target="pujas">Pujas</a>
+    <a class="nav-link" href="#gallery" data-target="gallery">Our Kendra</a>
+    <a class="nav-link" href="#contact" data-target="contact">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 Shree Shiv Shakti Jyotish Kendra · BK-1/3, West Shalimar Bagh, Delhi-110088</div>
+</footer>
+
+<script>
+  // --- NAVBAR SCROLL EFFECT ---
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('main-nav');
+    if (window.scrollY > 50) { nav.classList.add('scrolled'); } 
+    else { nav.classList.remove('scrolled'); }
+  });
+
+  // --- INTERSECTION OBSERVER FOR SCROLL REVEAL ANIMATIONS ---
+  function initRevealAnimations() {
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach(el => el.classList.remove('active'));
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('active'); }
+      });
+    }, { root: null, rootMargin: '0px', threshold: 0.15 });
+    reveals.forEach(el => revealObserver.observe(el));
+  }
+
+  // --- HERO PARTICLES ANIMATION ---
+  function createParticles() {
+    const container = document.getElementById('particles-container');
+    if(!container) return;
+    container.innerHTML = ''; 
+    for(let i=0; i < 15; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      const size = Math.random() * 6 + 2; 
+      const left = Math.random() * 100; 
+      const duration = Math.random() * 5 + 5; 
+      const delay = Math.random() * 5; 
+      particle.style.width = `${size}px`; particle.style.height = `${size}px`;
+      particle.style.left = `${left}%`; particle.style.animationDuration = `${duration}s`;
+      particle.style.animationDelay = `${delay}s`;
+      container.appendChild(particle);
+    }
+  }
+
+  // --- SINGLE PAGE APPLICATION ROUTER ---
+  function navigateTo(pageId) {
+    document.querySelectorAll('.page-view').forEach(page => page.classList.remove('active'));
+    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+
+    const targetPage = document.getElementById(pageId + '-view');
+    if (targetPage) { targetPage.classList.add('active'); } 
+    else { document.getElementById('home-view').classList.add('active'); pageId = 'home'; }
+
+    document.querySelectorAll(`.nav-link[data-target="${pageId}"]`).forEach(link => link.classList.add('active'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    const navLinksMenu = document.getElementById('navLinks');
+    if(navLinksMenu.classList.contains('show')) { navLinksMenu.classList.remove('show'); }
+    setTimeout(initRevealAnimations, 100);
+  }
+
+  window.addEventListener('hashchange', () => {
+    const hash = window.location.hash.replace('#', '') || 'home';
+    navigateTo(hash);
+  });
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const target = this.getAttribute('data-target');
+      if(target) { navigateTo(target); }
+    });
+  });
+
+  function toggleMenu() { document.getElementById('navLinks').classList.toggle('show'); }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('fname').value;
+    const phone = document.getElementById('fphone').value;
+    const service = document.getElementById('fservice').value;
+    
+    // Fix missing button variable reference logic
+    const btn = e.submitter || document.querySelector('button[type="submit"]');
+    const originalText = btn.innerText;
+    btn.innerText = 'Redirecting...';
+    btn.disabled = true;
+
+    const whatsappMsg = `Namaste Pandit Ji,%0A%0AMy Name: ${encodeURIComponent(name)}%0AMy Number: ${encodeURIComponent(phone)}%0AI am looking for: ${encodeURIComponent(service)}`;
+    
+    setTimeout(() => {
+      window.open(`https://wa.me/917905732148?text=${whatsappMsg}`, '_blank');
+      // Reset button state
+      btn.innerText = originalText;
+      btn.disabled = false;
+    }, 1000);
+  }
+
+  // --- LIGHTBOX GALLERY LOGIC ---
+  function openModal(imgSrc, captionText) {
+    document.getElementById('imgModal').style.display = "block";
+    document.getElementById('modalImg').src = imgSrc;
+    document.getElementById('caption').innerHTML = captionText;
+  }
+  function closeModal() {
+    document.getElementById('imgModal').style.display = "none";
+  }
+  // Close modal when clicking outside the image
+  window.onclick = function(event) {
+    const modal = document.getElementById('imgModal');
+    if (event.target == modal) { modal.style.display = "none"; }
+  }
+
+  // Initial Load
+  window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.replace('#', '') || 'home';
+    navigateTo(hash);
+    createParticles();
+    initRevealAnimations();
+  });
+</script>
+</body>
+</html>
