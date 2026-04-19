@@ -251,7 +251,7 @@
     .pujas-intro-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center; margin-bottom: 5rem; }
     .pujas-intro-text { font-size: 1.15rem; line-height: 1.8; color: var(--text); }
     .pujas-intro-img { border-radius: 8px; border: 4px solid var(--gold); box-shadow: 0 15px 40px rgba(0,0,0,0.2); overflow: hidden; aspect-ratio: 4/3; }
-    .pujas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem; }
+    .pujas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2.5rem; }
     .puja-detailed-card { display: flex; flex-direction: column; background: white; border: 1px solid var(--border); border-top: 5px solid var(--gold); padding: 3rem 2rem; text-align: center; position: relative; transition: all 0.4s ease; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.03);}
     .puja-detailed-card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(212,160,23,0.15); border-top-color: var(--saffron); }
     .puja-detailed-card .icon-wrap { width: 80px; height: 80px; background: var(--off-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 1.5rem; border: 2px dashed var(--saffron); transition: all 0.5s ease; }
@@ -263,7 +263,7 @@
     .puja-benefits strong { color: var(--crimson); display: block; margin-bottom: 0.4rem; font-family: 'Cinzel', serif; font-size: 1rem; }
 
     /* ─── GALLERY / KENDRA PAGE STYLES ─── */
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2.5rem; grid-auto-flow: dense; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2.5rem; grid-auto-flow: dense; }
     .gallery-item { position: relative; overflow: hidden; border-radius: 8px; border: 3px solid var(--gold); box-shadow: 0 10px 20px rgba(0,0,0,0.15); cursor: pointer; aspect-ratio: 4/3; background: var(--dark);}
     .gallery-item.portrait { aspect-ratio: 3/4; }
     .gallery-item.large { grid-column: span 2; aspect-ratio: 16/9; } 
@@ -324,6 +324,7 @@
     .footer-links { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
     .footer-links a { font-family: 'Cinzel', serif; font-size: 0.9rem; color: var(--gold); text-decoration: none; text-transform: uppercase; transition: all 0.3s ease; cursor: pointer; position: relative;}
     
+    /* ─── RESPONSIVE STYLES ─── */
     @media (max-width: 992px) {
       .about-layout, .contact-top-row, .pujas-intro-layout { grid-template-columns: 1fr; }
       .service-row { flex-direction: column; }
@@ -331,6 +332,7 @@
       .service-content { padding: 3rem 2rem; }
       .pujas-intro-img { order: -1; }
     }
+
     @media (max-width: 768px) {
       nav { padding: 0 1.5rem; }
       .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(13,5,0,0.98); flex-direction: column; padding: 2rem; border-bottom: 2px solid var(--gold); }
@@ -339,8 +341,31 @@
       .mobile-menu-btn { display: block; }
       .nav-cta.desktop-cta { display: none; } 
       .nav-links .nav-cta { display: inline-block; margin-top: 1.5rem; width: 100%; text-align: center; }
+      
+      /* Mobile layout adjustments */
+      .hero-section { padding-top: 7rem; padding-bottom: 8rem; }
+      .home-features { margin-top: -4rem; padding: 0 1rem; }
+      .container { padding: 3rem 1.5rem; }
+      .page-header { padding: 5rem 1.5rem; }
+      
+      /* Make grids single column on mobile */
+      .philosophy-grid { grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2rem; }
+      .badges-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .service-feature-list { grid-template-columns: 1fr; }
+      
+      /* Adjust paddings for smaller screens */
+      .service-content { padding: 2rem 1.5rem; }
+      .booking-form { padding: 2.5rem 1.5rem; }
+      .contact-card { padding: 2.5rem 1.5rem; }
+      .puja-detailed-card { padding: 2rem 1.5rem; }
+      
+      /* Testimonial slider adjustments */
       .marquee-wrapper::before, .marquee-wrapper::after { width: 50px; }
       .review-card { width: 300px; padding: 1.5rem; }
+      
+      /* Text sizing tweaks */
+      .hero-title { font-size: 2.2rem; }
+      .section-title { font-size: 1.8rem; }
     }
   </style>
 </head>
